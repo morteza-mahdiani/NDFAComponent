@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+ <fx:root type="javafx.scene.Group" xmlns:fx="http://javafx.com/fxml">
+      <Group layoutX="56.0" layoutY="65.0"   >
+         <children>
+            <QuadCurve fx:id="line" controlX="-50.0" controlY="-100.0" endX="50.0" fill="#e3e3e300" startX="-50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+            <Label fx:id="text" layoutX="-42.0" layoutY="-61.0" text="Label" textFill="#e10404" />
+         </children>
+      </Group>
+  </fx:root>
+
+<!--<AnchorPane id="AnchorPane" prefHeight="65.0" prefWidth="107.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="ndfacomponent.MyEdge">
+   <children>
+      <Group layoutX="56.0" layoutY="65.0">
+         <children>
+            <QuadCurve fx:id="line" controlX="-50.0" controlY="-100.0" endX="50.0" fill="#e3e3e300" startX="-50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+            <Label fx:id="text" layoutX="-42.0" layoutY="-61.0" text="Label" textFill="#e10404" />
+         </children>
+      </Group>
+   </children>
+</AnchorPane>-->

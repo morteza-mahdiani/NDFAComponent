@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root type="javafx.scene.layout.AnchorPane" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<AnchorPane id="AnchorPane" prefHeight="461.0" prefWidth="464.0">
+   <children>
+      <VBox alignment="CENTER" prefHeight="461.0" prefWidth="464.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TableView fx:id="table" layoutX="8.0" layoutY="7.0" prefHeight="418.0" prefWidth="464.0" AnchorPane.bottomAnchor="43.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" VBox.vgrow="ALWAYS">
+              <columns>
+                  <TableColumn fx:id="colState" prefWidth="102.0" text="state" />
+                  <TableColumn fx:id="colCont" prefWidth="75.0" text="edge">
+                     <columns>
+                        <TableColumn fx:id="colA" prefWidth="177.0" text="a" />
+                        <TableColumn fx:id="colB" prefWidth="184.0" text="b" />
+                     </columns>
+                  </TableColumn>
+              </columns>
+            </TableView>
+            <HBox alignment="CENTER" layoutX="144.0" layoutY="429.0" spacing="10.0">
+               <children>
+                  <Button fx:id="saveButton" layoutX="144.0" layoutY="429.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="68.0" text="Save" />
+                  <Button fx:id="closeButton" layoutX="232.0" layoutY="429.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" text="Close" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</fx:root>

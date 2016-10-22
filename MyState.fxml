@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--<fx:root type="javafx.scene.layout.AnchorPane" xmlns:fx="http://javafx.com/fxml">-->
+<!--<fx:root type="javafx.scene.Group" xmlns:fx="http://javafx.com/fxml">-->
+<fx:root type="javafx.scene.layout.StackPane" xmlns:fx="http://javafx.com/fxml">
+<!--<AnchorPane id="AnchorPane" prefHeight="49.0" prefWidth="64.0" >-->
+<!--    <AnchorPane id="AnchorPane" prefHeight="49.0" prefWidth="64.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ndfacomponent.FXMLDocumentController">
+   <children>-->
+      <ImageView fx:id="stateImage" fitHeight="50.0" fitWidth="64.0" layoutX="2.0" pickOnBounds="true" preserveRatio="true">
+<!--         <image>
+         </image>-->
+      </ImageView>
+      <Label fx:id="text" layoutX="28.0" layoutY="17.0" prefHeight="15.0" prefWidth="23.0" text="q0" textFill="#d30606" />
+<!--   </children>
+</AnchorPane>-->
+</fx:root>

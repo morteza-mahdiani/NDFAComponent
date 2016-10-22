@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minHeight="550.0" minWidth="500.0" prefHeight="553.0" prefWidth="673.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ndfacomponent.FXMLDocumentController">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="6.0" prefHeight="44.0" prefWidth="321.0" spacing="20.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="346.0">
+         <children>
+            <Button fx:id="newBut" mnemonicParsing="false" prefHeight="25.0" prefWidth="52.0" text="New" />
+            <Button fx:id="saveBut" mnemonicParsing="false" text="Save" />
+            <Button fx:id="delBut" mnemonicParsing="false" text="Delete" />
+            <Button fx:id="showBut" mnemonicParsing="false" text="ShowTable" />
+         </children>
+      </HBox>
+      <VBox layoutX="517.0" layoutY="74.0" prefHeight="477.0" prefWidth="193.0" spacing="10.0" AnchorPane.bottomAnchor="2.0" AnchorPane.rightAnchor="-5.0" AnchorPane.topAnchor="74.0">
+         <children>
+            <VBox>
+               <children>
+                  <Label text="Element:">
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <VBox prefHeight="49.0" prefWidth="183.0" spacing="5.0" style="-fx-border-color: black;">
+                     <children>
+                        <RadioButton fx:id="stateRadio" mnemonicParsing="false" selected="true" text="State" />
+                        <RadioButton fx:id="edgeRadio" mnemonicParsing="false" text="Edge" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets right="5.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox>
+               <children>
+                  <Label text="Options:">
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <VBox fx:id="parentProp" layoutX="10.0" layoutY="10.0" prefHeight="49.0" prefWidth="183.0" spacing="5.0" style="-fx-border-color: black;">
+                     <children>
+                        <VBox fx:id="groupProp" spacing="5.0">
+                           <children>
+                              <RadioButton fx:id="startRadio" mnemonicParsing="false" text="Start" />
+                              <RadioButton fx:id="middleRadio" mnemonicParsing="false" selected="true" text="Middle" />
+                              <RadioButton fx:id="finRadio" layoutX="11.0" layoutY="34.0" mnemonicParsing="false" text="Finish" />
+                              <RadioButton fx:id="startFinRadio" layoutX="11.0" layoutY="57.0" mnemonicParsing="false" text="Start - Finish" />
+                              <Line endX="100.0" startX="-50.0">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </Line>
+                           </children>
+                        </VBox>
+                        <Label text="Name:" />
+                        <TextField fx:id="textProp" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets right="5.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="pane" layoutX="3.0" layoutY="48.0" prefHeight="494.0" prefWidth="460.0" style="-fx-border-style: dotted; -fx-border-color: yellow; -fx-background-color: #7fdadb10;" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="210.0" AnchorPane.topAnchor="48.0" />
+      <VBox layoutX="476.0" layoutY="2.0" style="-fx-border-radius: 5; -fx-border-color: gray; -fx-opacity: .9;" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+         <children>
+            <VBox>
+               <children>
+                  <VBox alignment="CENTER" prefHeight="57.0" prefWidth="193.0" spacing="5.0" VBox.vgrow="NEVER">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Amirkabir">
+                           <effect>
+                              <DropShadow color="#25a173" radius="4.75" spread="0.31" width="0.0" />
+                           </effect>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="University of Technology">
+                           <effect>
+                              <DropShadow color="#6b1545" height="10.37" radius="3.6099999999999994" spread="0.59" width="6.07" />
+                           </effect>
+                        </Text>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <effect>
+                        <DropShadow blurType="ONE_PASS_BOX" height="145.72" radius="60.975" spread="0.01" width="100.18" />
+                     </effect>
+                  </VBox>
+               </children>
+               <effect>
+                  <ColorAdjust brightness="0.33" contrast="0.14" hue="0.28" saturation="0.55" />
+               </effect>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
